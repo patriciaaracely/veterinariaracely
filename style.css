@@ -1,0 +1,179 @@
+*{
+    margin: 35px;
+    padding: 0px;;
+}
+
+header,footer,
+article,section,
+nav, figure{
+    display: block;
+}
+
+
+body{
+    /* Estilos por default para color de texto,tamaño,color de fondo */
+    font-size: 1em;
+    color:#000000;
+    background-color:#701629;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* cabeceras: */
+
+h1,h2,h3{
+    /* Agregamos una sombra al texto a los h1,h2,h3 */
+    text-shadow: 0 1px 1px rgb(8, 199, 18);
+}
+
+h2{
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 0 01em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+p{ 
+    padding: 10px; /* el mismo padding para todos los lados*/
+   
+    padding-top: 10px; /* Arriba */
+    padding-bottom: 10px; /* Abajo */  
+    padding-left: 10px; /* Izquierda */
+    padding-right: 10px; /* Derecha */
+   
+    padding: 25px 10px 25px 10px; /*Arriba, Derecha, Abajo, Izquierda */
+   
+    padding: 25px 10px; /* 25px Arriba y Abajo, 10px  Derecha e Izquierda */
+   }
+   
+
+/* parrafo */
+
+p{
+    line-height: 1.8em; /* interlineado */
+    padding-bottom: 1em;
+    padding-left: 0em;
+}
+
+.line{
+    /* linea divisora */
+    height: 5px;
+    margin: 1em 1;
+    overflow: hidden;
+}
+
+article .line{
+    /*linea divisora dentro de los article */
+    background-color: rgb(224, 193, 146);
+}
+
+
+.logo{
+    padding: 20px 5px 10px;
+}
+
+/* Hipervinculos */
+
+a, a:visited {
+    /* para quitarle el subrayado al hipervinculo */
+    text-decoration: none;
+}
+
+
+/* Menu */
+nav{
+    background-color: rgb(188, 126, 207);
+    position:absolute; 
+    right: 2em;
+    top: 0em;
+}
+
+nav ul li{
+    /* para que el menu se muestre de forma horizontal */
+    display: inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+    color:rgb(14, 15, 13);
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin: 5px 2px;
+    padding:7px 10px 4px;
+    text-align:center;
+}
+
+nav u li a:hover{
+    text-decoration: none;
+    background-color: blue;
+}
+
+nav,article, nav ul li a, figure{
+    /*bordes redondeados: */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+/* articulos  */
+
+#page{
+    width:960px;
+    margin:0 auto;
+    position:relative;
+}
+
+article{
+    background-color: rgb(175, 93, 16);
+    margin:5em 5;
+    padding:50px;
+    text-shadow: 5 2px 5 brown;
+}
+
+/* para mostrar un espacio despues de cada article */
+
+.clear:after{
+    content: ".";
+    display: block;
+    height: 15;
+    clear:both;
+    visibility: hidden;
+}
+
+/* figure e imagen */
+
+figure{
+    float: right;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+figure img{
+    margin-left: -60px;
+}
+
+/* Footer */
+
+footer{
+    margin-bottom: 20px; 
+    text-align: center;
+    font-size: 0.825em;
+}
+
+footer p{
+    background-color: #ad1862;
+    padding: 30px;
+    /* bordes redondeados*/
+    -moz-border-radius:15px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
